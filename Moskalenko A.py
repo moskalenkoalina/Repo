@@ -5,9 +5,8 @@ def parse_text() :
     words = re.findall(r'\b\w+\b', t.lower())
     return words
 
-
 def count_word(words):
-    word_counts = {}
+    word_counts = {}  
 
     for word in words:
         if word in word_counts:
@@ -17,10 +16,12 @@ def count_word(words):
 
     return word_counts
 
+
 def sort_and_display(word_counts):
     sorted_words = sorted(word_counts.items(), key=lambda x: x[1], reverse=True)
     for word, count in sorted_words:
         print(f"{word}: {count}")
+
 
 def main():
     file_path = 'text.txt'
