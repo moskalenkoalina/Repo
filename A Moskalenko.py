@@ -28,5 +28,4 @@ def main():
     words = parse_text()
     word_counts = count_word(words)
     sort_and_display(word_counts)
-if __name__ == "__main__":
     main()
